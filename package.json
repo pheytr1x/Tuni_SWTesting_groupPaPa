@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "by Patrik and Pauli",
   "scripts": {
-    "localtest": "mocha -r esm tests/unit/**/*.js",
-    "test": "mocha --reporter mocha-lcov-reporter | coveralls"
+    "test": "mocha -r esm tests/unit/**/*.js",
+    "lcov": "mocha --reporter mocha-lcov-reporter | coveralls"
   },
   "type": "module",
   "author": "",
