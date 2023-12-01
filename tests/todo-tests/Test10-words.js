@@ -4,7 +4,7 @@ const { expect } = chai;
 
 // Tests
 
-describe('src/ceil.js function', () => {
+describe('Test 1. CEIL /src/ceil.js function', () => {
   it('should round up 4.006 to 5', () => {
     expect(ceil(4.006)).to.equal(5);
   });
