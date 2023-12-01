@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "by Patrik and Pauli",
   "scripts": {
-    "test": "nyc mocha -r esm tests/unit/**/*.js"
+    "localtest": "mocha -r esm tests/unit/**/*.js",
+    "test": "mocha --reporter mocha-lcov-reporter | coveralls"
   },
   "type": "module",
   "author": "",
@@ -13,6 +14,7 @@
     "coveralls": "^3.1.1",
     "esm": "^3.2.25",
     "mocha": "^10.2.0",
+    "mocha-lcov-reporter": "^1.3.0",
     "nyc": "^15.1.0"
   },
   "directories": {
