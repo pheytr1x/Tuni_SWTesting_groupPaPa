@@ -32,3 +32,11 @@ jobs:
     
     - name: Run Tests
       run: npm test
+
+    - name: Send Coverage to Coveralls
+      run: |
+        npm install -g coveralls
+        coveralls --file coverage/lcov-report/lcov.info
+      env:
+        COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+    

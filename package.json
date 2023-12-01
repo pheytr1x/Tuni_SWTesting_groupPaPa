@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "description": "by Patrik and Pauli",
   "scripts": {
-    "test": "mocha -r esm tests/unit/**/*.js"
+    "test": "nyc mocha -r esm tests/unit/**/*.js"
   },
-  "type":"module",
+  "type": "module",
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "chai": "^4.3.10",
+    "coveralls": "^3.1.1",
     "esm": "^3.2.25",
-    "mocha": "^10.2.0"
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0"
   },
   "directories": {
     "test": "tests"
