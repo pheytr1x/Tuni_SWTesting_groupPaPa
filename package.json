@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "by Patrik and Pauli",
   "scripts": {
-    "test": "mocha -r esm tests/unit/**/*.js",
-    "lcov": "mocha --reporter mocha-lcov-reporter | coveralls"
+    "test": "nyc --reporter=lcov mocha -r esm tests/unit/**/*.js"
   },
   "type": "module",
   "author": "",
