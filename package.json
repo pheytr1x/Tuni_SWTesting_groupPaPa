@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "by Patrik and Pauli",
   "scripts": {
-    "test": "nyc --reporter=lcov mocha -r esm tests/unit/**/*.js"
-  },
+    "test": "nyc mocha  tests/unit/**/*.js"
+    },
   "type": "module",
   "author": "",
   "license": "MIT",
@@ -17,7 +17,15 @@
     "nyc": "^15.1.0"
   },
   "directories": {
-    "test": "tests"
+    "test": "tests/unit/"
+  },
+  "nyc": {
+    "include": ["src/**/*.js"],
+    "exclude": ["tests/**/*.js"],
+    "reporter": ["lcov", "text"]
+  },
+  "mocha": {
+    "spec": "tests/unit/**/*.js"
   },
   "keywords": []
 }
