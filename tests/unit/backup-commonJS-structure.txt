@@ -1,0 +1,22 @@
+
+/*
+// BACKUP TEMPLATE FOR COMMON JS TESTS
+// ..but we use ES6 now, so this is not used.
+
+const chai = import('chai');
+const expect = chai.expect;
+
+
+// INITIAL TESTS
+describe('Initial Test 1 -', () => {
+  it('should pass because true is true', () => {
+    expect(true).to.equal(true);
+  });
+});
+
+describe('Initial Fail Test ', () => {
+  it('should fail because 2 != 1', () => {
+    expect(2).to.equal(1);
+  });
+});
+

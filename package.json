@@ -1,14 +1,20 @@
 {
-  "name": "software-testing-assignment",
+  "name": "Tuni_SWTesting_groupPaPa",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
+  "description": "by Patrik and Pauli",
   "scripts": {
-    "test": "echo \"Error: no tests are implemented yet \" && exit 1"
+    "test": "mocha -r esm tests/unit/**/*.js"
   },
+  "type":"module",
   "author": "",
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "esm": "^3.2.25",
+    "mocha": "^10.2.0"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": []
 }
