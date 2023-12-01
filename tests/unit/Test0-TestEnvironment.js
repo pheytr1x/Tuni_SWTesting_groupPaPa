@@ -46,9 +46,13 @@ describe('Test 0. JS Environment Test Suite', () => {
       expect(1).to.be.ok;
       expect(0).to.not.be.ok;
     });
-    
+
+    /*
+    // UNCOMMENT TO FAIL TEST
     it('should fail "2 == 1"', () => {
       expect(2).to.equal(1);
     });
+    */
+
   });
 });
