@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/pheytr1x/Tuni_SWTesting_groupPaPa/badge.svg?branch=main)](https://coveralls.io/github/pheytr1x/Tuni_SWTesting_groupPaPa?branch=main)
+
 # RepoTuniSWTest-Papa
 Tuni COMP.SE.200 Software Testing Assignment
 Implemented by Patrik and Pauli
