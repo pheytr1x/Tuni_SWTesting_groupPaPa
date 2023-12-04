@@ -19,13 +19,11 @@ describe('Test 2. CHUNK /src/chunk.js function', () => {
     expect(result).to.deep.equal( [ ['a', 'b'], ['c', 'd'] ] );
   });
 
-  /*
   it('should split an array into chunks of 3', () => {
     const array = ['a', 'b', 'c', 'd'];
     const result = chunk(array, 3);
     expect(result).to.deep.equal([['a', 'b', 'c'], ['d']]);
   });
-  */
 
   it('should return an empty array when input array is null', () => {
     const array = null;

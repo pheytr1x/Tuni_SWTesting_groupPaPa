@@ -22,10 +22,15 @@
     "all": true,
     "include": [
       "**/src/ceil.js",
+      "**/src/chunk.js",
+      "**/src/defaultTo.js",
       "**/src/difference.js",
       "**/src/slice.js",
       "**/src/filter.js",
-      "**/src/defaultTo.js"
+      "**/src/map.js",
+      "**/src/memoize.js",
+      "**/src/reduce.js",
+      "**/src/words.js"
     ],
     "exclude": [
       "**/tests/**/*.js"
