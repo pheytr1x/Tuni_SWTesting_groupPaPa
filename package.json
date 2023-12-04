@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "by Patrik and Pauli",
   "scripts": {
-    "test": "nyc mocha  tests/unit/**/*.js"
+    "test": "nyc mocha tests/unit/**/*.js"
     },
   "type": "module",
   "author": "",
@@ -20,8 +20,12 @@
     "test": "tests/unit/"
   },
   "nyc": {
-    "include": ["src/**/*.js"],
-    "exclude": ["tests/**/*.js"],
+    "all": true,
+    "include": ["**/src/**"],
+    "exclude": [
+      "**/src/.internal/**",
+      "**/tests/**/*.js"
+    ],
     "reporter": ["lcov", "text"]
   },
   "mocha": {
