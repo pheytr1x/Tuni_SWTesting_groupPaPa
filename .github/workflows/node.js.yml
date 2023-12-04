@@ -62,15 +62,11 @@ jobs:
         run: npm install
 
       - name: Run Tests to create coverage report
-        run: npm test -- --coverage
+        run: npm test # -- --coverage
         continue-on-error: true
 
-      - name: Coveralls
-        uses: coverallsapp/github-action@v2.2.3
+      - name: Coveralls # Upload coverage report to Coveralls
+        uses: coverallsapp/github-action@v2.2.3 
+        # COVERALLS REPO TOKEN is integrated in GitHub Actions, no need for set it up
 
-
-      - name: Send Coverage to Coveralls
-        run: coveralls --file coverage/lcov.info
-        env:
-          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
     

@@ -4,7 +4,7 @@
   "description": "by Patrik and Pauli",
   "scripts": {
     "test": "nyc mocha tests/unit/**/*.js"
-    },
+  },
   "type": "module",
   "author": "",
   "license": "MIT",
@@ -13,7 +13,6 @@
     "coveralls": "^3.1.1",
     "esm": "^3.2.25",
     "mocha": "^10.2.0",
-    "mocha-lcov-reporter": "^1.3.0",
     "nyc": "^15.1.0"
   },
   "directories": {
@@ -21,9 +20,14 @@
   },
   "nyc": {
     "all": true,
-    "include": ["**/src/**"],
+    "include": [
+      "**/src/ceil.js",
+      "**/src/difference.js",
+      "**/src/slice.js",
+      "**/src/filter.js",
+      "**/src/defaultTo.js"
+    ],
     "exclude": [
-      "**/src/.internal/**",
       "**/tests/**/*.js"
     ],
     "reporter": ["lcov", "text"]
