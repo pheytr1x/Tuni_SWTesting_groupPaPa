@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "by Patrik and Pauli",
   "scripts": {
-    "test": "nyc mocha tests/unit/**/*.js"
+    "test": "nyc --reporter=text-lcov npm test | coveralls"
   },
   "type": "module",
   "author": "",
