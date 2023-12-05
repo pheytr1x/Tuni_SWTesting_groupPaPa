@@ -3,22 +3,26 @@
   "version": "1.0.0",
   "description": "by Patrik and Pauli",
   "scripts": {
-    "test": "nyc mocha tests/unit/**/*.js"
+    "test": "c8 mocha tests/unit/**/*.js"
   },
   "type": "module",
+  "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "c8": "^8.0.1",
     "chai": "^4.3.10",
     "coveralls": "^3.1.1",
     "esm": "^3.2.25",
-    "mocha": "^10.2.0",
-    "nyc": "^15.1.0"
+    "mocha": "^10.2.0"
   },
   "directories": {
     "test": "tests/unit/"
   },
-  "nyc": {
+  "mocha": {
+    "spec": "tests/unit/**/*.js"
+  },
+  "c8": {
     "all": true,
     "include": [
       "**/src/ceil.js",
@@ -33,12 +37,7 @@
       "**/src/words.js"
     ],
     "exclude": [
-      "**/tests/**/*.js"
-    ],
-    "reporter": ["lcov", "text"]
-  },
-  "mocha": {
-    "spec": "tests/unit/**/*.js"
-  },
-  "keywords": []
+      "**/.internal/**"
+    ]
+  }
 }
