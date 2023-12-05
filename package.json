@@ -38,6 +38,10 @@
     ],
     "exclude": [
       "**/.internal/**"
+    ],
+    "reporter": [
+      "text",
+      "lcov"
     ]
   }
 }
