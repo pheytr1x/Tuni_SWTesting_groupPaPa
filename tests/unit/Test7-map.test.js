@@ -26,7 +26,13 @@ const { expect } = chai;
 
 // Tests
 
-describe('Test 7. MAP /src/map.js function', function() {
+describe('Map /src/map.js function', function() {
+  it('should return an empty array when input array is null', function() {
+    const array = null;
+    const result = map(array, x => x * 2);
+    expect(result).to.deep.equal([2, 4, 6]);
+  });
+  
   it('should apply the function to each element of the array', function() {
     const array = [1, 2, 3];
     const result = map(array, x => x * 2);
