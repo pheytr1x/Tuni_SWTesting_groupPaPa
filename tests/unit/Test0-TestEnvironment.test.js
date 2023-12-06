@@ -9,7 +9,7 @@ import chai from 'chai';
 const { expect } = chai;
 
 
-describe('Test 0. JS Environment Test Suite', () => {
+describe('JS Environment Test Suite', () => {
   // Test for basic JavaScript functionality
   describe('JavaScript Functionality', () => {
     it('should handle basic arithmetic', () => {

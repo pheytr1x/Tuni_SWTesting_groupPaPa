@@ -4,7 +4,7 @@ const { expect } = chai;
 
 // Tests
 
-describe('Test 8. Memoize /src/memoize.js function', () => {
+describe('Memoize /src/memoize.js function', () => {
 
   describe('Input validation', () => {
 

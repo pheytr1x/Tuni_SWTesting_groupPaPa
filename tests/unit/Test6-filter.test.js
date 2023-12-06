@@ -4,7 +4,7 @@ const { expect } = chai;
 
 // Tests
 
-describe('Test 6. Filter /src/filter.js function', () => {
+describe('Filter /src/filter.js function', () => {
   
   it('should always return a new array', () => {
 

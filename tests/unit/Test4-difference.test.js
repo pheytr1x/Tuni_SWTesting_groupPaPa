@@ -4,7 +4,7 @@ const { expect } = chai;
 
 // Tests
 
-describe('Test 4. difference /src/difference.js function', () => {
+describe('Difference /src/difference.js function', () => {
   
   describe('Input validation', () => {
 

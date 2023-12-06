@@ -4,7 +4,7 @@ const { expect } = chai;
 
 // Tests
 
-describe('Test 3. defaultTo /src/defaultTo.js function', () => {
+describe('DefaultTo /src/defaultTo.js function', () => {
   it('should return defaultValue when value is `null`', () => {
     expect(defaultTo(null, 1)).to.equal(1);
   });

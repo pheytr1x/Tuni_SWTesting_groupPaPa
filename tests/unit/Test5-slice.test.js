@@ -1,33 +1,9 @@
-/**
- * TEST FOR SLICE FUNCTION
- * -----------------------
- * Creates a slice of `array` from `start` up to, but not including, `end`.
- *
- * **Note:** This method is used instead of
- * [`Array#slice`](https://mdn.io/Array/slice) to ensure dense arrays are
- * returned.
- *
- * @category Array
- * @param {Array} array The array to slice.
- * @param {number} [start=0] The start position. 
- * A negative index will be treated as an offset from the end.
- * @param {number} [end=array.length] The end position. 
- * A negative index will be treated as an offset from the end.
- * @returns {Array} Returns the slice of `array`.
- * @example
- *
- * var array = [1, 2, 3, 4]
- *
- * _.slice(array, 2)
- * // => [3, 4]
- */
-
 import chai from 'chai';
 import slice from '../../src/slice.js'; // File under test
 const { expect } = chai;
 
 
-describe('slice', function() {
+describe('Slice /src/slice.js function', function() {
   it('should return all elements from start to end', function() {
     const array = [1, 2, 3, 4];
     expect(slice(array, 1, 3)).to.deep.equal([2, 3]);

@@ -4,7 +4,7 @@ const { expect } = chai;
 
 // Tests
 
-describe('TEST 9. Reduce /src/reduce.js function', () => {
+describe('Reduce /src/reduce.js function', () => {
   it('should reduce an array to a single value', () => {
     const arr = [1, 2, 3];
     const result = reduce(arr, (sum, n) => sum + n, 0);

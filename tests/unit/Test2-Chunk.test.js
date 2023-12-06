@@ -10,12 +10,11 @@ import chai from 'chai';
 import chunk from '../../src/chunk.js'; // Source file
 const { expect } = chai;
 
-describe('Test 2. CHUNK /src/chunk.js function', () => {
+describe('Chunk /src/chunk.js function', () => {
   it('should split an array into chunks of 2', () => {
     const array = ['a', 'b', 'c', 'd'];
     const result = chunk(array, 2);
     
-    console.log("result of chunk: ", result); 
     expect(result).to.deep.equal( [ ['a', 'b'], ['c', 'd'] ] );
   });
 
