@@ -42,6 +42,12 @@ describe('words', function() {
     expect(result).to.deep.equal([]);
   });
 
+  it('should return an empty array with non-matching pattern', function() {
+    const string = 'fred, barney, & pebbles';
+    const result = words(string, 'non-matching-pattern');
+    expect(result).to.deep.equal([]);
+  });
+
   it('should handle unicode characters', function() {
     const string = 'déjà vu';
     const result = words(string);
