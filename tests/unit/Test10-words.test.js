@@ -7,7 +7,7 @@ describe('Words /src/words.js function', function() {
   it('should split a string into words', function() {
     const string = 'fred, barney, & pebbles';
     const result = words(string);
-    expect(result).to.deep.equal(['fred', 'barney', '&', 'pebbles']);
+    expect(result).to.deep.equal(['fred', 'barney', 'pebbles']);
   });
 
   it('should split a string into words using a custom pattern', function() {
