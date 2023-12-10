@@ -8,7 +8,7 @@ describe('Map /src/map.js function', function() {
   it('should return an empty array when input array is null', function() {
     const array = null;
     const result = map(array, x => x * 2);
-    expect(result).to.deep.equal([2, 4, 6]);
+    expect(result).to.deep.equal([]);
   });
   
   it('should apply the function to each element of the array', function() {
